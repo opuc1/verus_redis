@@ -1,0 +1,3 @@
+main: me.opuc1.BungeePlugin
+version: 1.0
+name: verus_redis_bungee
