@@ -60,6 +60,12 @@
         </dependency>
 
         <dependency>
+            <groupId>me.opuc1.redis</groupId>
+            <artifactId>verus_redis_messages</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>me.opuc1.json</groupId>
             <artifactId>json_config</artifactId>
             <version>1.0</version>
