@@ -12,6 +12,7 @@
     <modules>
         <module>bukkit</module>
         <module>velocity</module>
+        <module>bungeecord</module>
     </modules>
 
     <build>
