@@ -13,6 +13,23 @@
     <artifactId>bukkit</artifactId>
     <packaging>jar</packaging>
 
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>plugin.yml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>${project.basedir}</directory>
+                <includes>
+                    <include>src/main/resources/*.jar</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+
     <dependencies>
         <dependency>
             <groupId>me.levansj01.verus</groupId>

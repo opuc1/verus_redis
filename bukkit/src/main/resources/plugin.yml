@@ -1,0 +1,5 @@
+main: me.opuc1.BukkitPlugin
+version: 1.0
+name: verus_redis_bukkit
+depend:
+  - VerusAPI
