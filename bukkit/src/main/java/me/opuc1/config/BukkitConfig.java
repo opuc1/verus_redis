@@ -5,8 +5,14 @@ import me.opuc1.json.JsonConfig;
 
 @Getter
 public class BukkitConfig extends JsonConfig {
+    private final Server server = new Server();
     private final Redis redis = new Redis();
     private final Punishments punishments = new Punishments();
+
+    @Getter
+    public static class Server {
+        private final String name = "";
+    }
 
     @Getter
     public static class Redis {

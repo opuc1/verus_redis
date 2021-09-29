@@ -10,6 +10,7 @@ import org.bukkit.event.Listener;
 
 @RequiredArgsConstructor
 public class PunishmentListener implements Listener {
+    private final String serverName;
     private final RedisController<Punishment> controller;
 
     @EventHandler
@@ -17,7 +18,7 @@ public class PunishmentListener implements Listener {
         Check check = event.getCheck();
 
         controller.publish(new Punishment(
-                "",
+                serverName,
                 event.getPlayer().getName(),
                 check.getType(), check.getSubType(), check.getDisplay(),
                 event.getCommands(), event.isAnnounce()

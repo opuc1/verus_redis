@@ -30,7 +30,7 @@ public class BukkitPlugin extends JavaPlugin {
 
         if (config.getPunishments().isEnabled()) {
             RedisController<Punishment> controller = new RedisController<>(manager, config.getPunishments().getChannel());
-            PunishmentListener listener = new PunishmentListener(controller);
+            PunishmentListener listener = new PunishmentListener(config.getServer().getName(), controller);
             getServer().getPluginManager().registerEvents(listener, this);
             getLogger().info("Registered Punishment listener.");
         }
